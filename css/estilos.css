@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+   font-family: "Montserrat", sans-serif;
+   margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+}
+
+body{
+   background-image: linear-gradient(to bottom, #fff6b9, #ffebb1, #ffe0ac, #ffd5a8, #ffcaa5, #ffc09c, #feb695, #feab8f, #fd9e80, #fc9271, #fa8562, #f87754);
+   margin-top: 0;
+}
+
+/* Header */
+.altoheader{
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      width: 100%;
+      height:  5%;    
+      position:sticky;
+      top: 0;
+      height:20vh;
+         padding:20px;
+        .logo{
+            width: 80px;
+         }
+        
+         
+        
+         
+
+      background-color: rgba(245, 245, 220, 0.629);
+            
+            ul{
+              display: flex;
+               list-style: none;
+               align-items: center; 
+               
+                li{
+                     margin-right: 15px;
+                        a{
+                        text-decoration: none;
+                        color: #0032bb;
+                        font-size: 1.5em;
+                     
+                        }
+                   }
+            }
+      }
+.main{
+   h1{
+      font-size: 3rem;
+      text-align: center;
+    
+    
+   }
+   
+   h2{
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 30px;
+   }
+         h4,h5,h6{
+            font-size: 1rem;
+            text-align: center;
+            margin-bottom: 10px;
+                  }
+                  p{
+                     font-size: 1.5rem;
+                     text-align: center;
+                     margin-bottom: 30px;
+                  }
+                  a{
+                     text-decoration: none;
+                  }
+ .titulo{
+   display: inline-block;
+   padding: 50px;
+   background-color:rgba(247, 235, 17, 0.824);
+   width: 100%;
+ }                
+}
+/* index */
+
+.sectionindexprincipal{
+            
+            
+           
+            
+                     .nuestrosproductos{
+                        display: flex;
+                        flex-direction: row;
+                        padding: 20px;
+                        margin: 0 auto;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        
+                        
+                        .flex-item{
+
+                           text-align: center;
+                           width: 300px;
+                           padding: 20px;
+                           margin: 10px;
+                           box-shadow: 1px 2px 36px 18px rgba(0, 0, 0, 0.43);
+                            border-radius: 5px;    
+                            .botoncarrito {
+                              background-color: #4d9189; /* Color de fondo */
+                              color: white; /* Color del texto */
+                              padding: 10px 15px; /* Espaciado interno */
+                              border: none; /* Sin borde */
+                              border-radius: 5px; /* Bordes redondeados */
+                              cursor: pointer; /* Cambia el cursor al pasar por encima */
+                              font-size: 16px; /* Tamaño de la fuente */
+                              transition: background-color 0.3s ease; /* Efecto de transición */
+                          }
+                          
+                          .botoncarrito:hover {
+                              background-color: #5ee828; /* Color de fondo al pasar el cursor */
+                          }
+                          
+                        img{
+                              
+                              width: 100%;
+                              height: 250px;
+                                 }
+                        }
+                     }
+                    
+               }
+               .videoindex{
+            display: flex;
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+            width: 60%;
+           
+            flex-wrap: wrap;
+            
+            margin: 0 auto;
+                           }
+      /*   background-image: url(../assets/img/cubos-blancos-fondo-.webp);
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center center;*/
+               
+
+              
+                  
+               
+/* footer */
+ .altofooter
+               {
+               width: 100%;
+               height:  10vh;
+               .logo{
+                  width: 80px;
+               }
+
+               
+                  
+                  ul{
+                     display: flex;
+                     list-style: none;
+                     a{
+                        margin-right: 15px;
+                        text-decoration: none;
+                        color: #0032bb;
+                        font-size: 1.5em;
+                     }
+                  }
+                  }
+
+.fa-square-whatsapp{
+                  color: #00bb2d;
+                  font-size: 5em;
+                  position: fixed;
+                  bottom: 20px;
+                  right: 20px;
+               }
+.fa-square-instagram{
+                  color: rgb(230, 79, 204);
+                  font-size: 5em;
+               }
+.fa-facebook{
+                  color:#3b5998 ;
+                  font-size: 5em;
+               }
+               
+               
+               /*seccion galeria*/
+.secciongaleriaGrid{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr 0,5fr 1fr;
+   grid-template-areas: "barby intensamente"
+                        "frozen intensamente"
+                        " pliplin intensamente"
+                         " plinplin unicornio"    ;  
+   gap: 25px;
+    .intensamente{
+      grid-area:intensamente;
+      
+    }
+    .barby{
+      grid-area: barby;
+    
+    }
+    .frozen{
+      grid-area: frozen;
+      
+    }
+    .plinplin{
+      grid-area: plinplin;
+      
+    }
+    .unicornio{
+      grid-area: unicornio;
+     
+    }
+    .hijo{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+}
