@@ -7,10 +7,10 @@
    box-sizing: border-box;
 }
 
-/* body{ */
-/*   background-image: linear-gradient(to bottom, #fff6b9, #ffebb1, #ffe0ac, #ffd5a8, #ffcaa500, #ffc09c, #feb695, #feab8f, #fd9e80, #fc9271, #fa8562, #f87754);
-   margin-top: 0;*/
-/* } */
+ body{ 
+ background-image: linear-gradient(to bottom, #fff6b9, #ffebb1, #ffe0ac, #ffd5a8, #ffcaa500, #ffc09c, #feb695, #feab8f, #fd9e80, #fc9271, #fa8562, #f87754);
+   margin-top: 0;
+ } 
 
 /* Header */
 .altoheader{
@@ -92,6 +92,7 @@
       font-size: 1.5rem;
       text-align: center;
       margin-bottom: 30px;
+      
    }
          h4,h5,h6{
             font-size: 1rem;
@@ -106,6 +107,9 @@
                   a{
                      text-decoration: none;
                            }
+         .titulosPrpductos{
+            padding: 20px;
+         }
          .titulo{
             text-align: center;
             padding: 50px;
@@ -113,6 +117,43 @@
 
          }                
 }
+@media screen and (max-width: 760px ){
+                     h1{
+                        font-size: 2rem;
+                        text-align: center;
+                     
+                     
+                     }
+                     
+                     
+                     h2{
+                        font-size: 0.5rem;
+                        text-align: center;
+                        margin-bottom: 30px;
+                     }
+                           h4,h5,h6{
+                              font-size: 0.75rem;
+                              text-align: center;
+                              margin-bottom: 10px;
+                                    }
+                                    p{
+                                       font-size: 0.75rem;
+                                       text-align: center;
+                                       margin-bottom: 30px;
+                                    }
+                                    a{
+                                       text-decoration: none;
+                                             }
+                           .titulo{
+                              text-align: center;
+                              padding: 50px;
+                              
+                              
+
+                           }                
+}
+
+
 /* index */
 
 .sectionindexprincipal{
