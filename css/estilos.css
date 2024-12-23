@@ -11,406 +11,151 @@
  background-image: linear-gradient(to bottom, #fff6b9, #ffebb1, #ffe0ac, #ffd5a8, #ffcaa500, #ffc09c, #feb695, #feab8f, #fd9e80, #fc9271, #fa8562, #f87754);
    margin-top: 0;
  } 
-
-/* Header */
-.altoheader{
-      display: flex;
-      justify-content: space-between;
-      align-content: center;
-      width: 100%;
-      height:  5%;    
-      position:sticky;
-      top: 0;
-      height:20vh;
-         padding:20px;
-        .logo{
-            width: 80px;
-         }
-   background-color: rgba(245, 245, 220, 0.629);
-            
-            ul{
-              display: flex;
-               list-style: none;
-               align-items: center; 
-               
-                li{
-                     margin-right: 15px;
-                        a{
-                        text-decoration: none;
-                        color: #0032bb;
-                        font-size: 1.5em;
-                     
-                        }
-                   }
-            }
-      }
-      @media screen and (max-width: 760px ) {
-         .altoheader{
-            display: flex;
-            justify-content: space-between; 
-            position: static;            
-            width: 100%;
-            height:  5%;    
-            
-            top: 0;
-            height:20vh;
-               padding:20px;
-              .logo{
-                  width: 80px;
-               }
-         background-color: rgba(245, 245, 220, 0.629);
-                  
-                  ul{
-                    display: flex;
-                     flex-direction: column;
-                     list-style: none;
-                     align-items: start; 
-                     
-                      li{
-                           margin-right: 15px;
-                              a{
-                              text-decoration: none;
-                              color: #0032bb;
-                              font-size: 1.5em;
-                           
-                              }
-                         }
-                  }
-            }
-      }
-
-.altomain{
-   h1{
-      font-size: 3rem;
-      text-align: center;
-    
-    
-   }
-   
-   
-   h2{
-      font-size: 1.5rem;
-      text-align: center;
-      margin-bottom: 30px;
-      
-   }
-         h4,h5,h6{
-            font-size: 1rem;
-            text-align: center;
-            margin-bottom: 10px;
-                  }
-                  p{
-                     font-size: 1.5rem;
-                     text-align: center;
-                     margin-bottom: 30px;
-                  }
-                  a{
-                     text-decoration: none;
-                           }
-         .titulosPrpductos{
-            padding: 20px;
-         }
-         .titulo{
-            text-align: center;
-            padding: 50px;
-            width: 100%;
-
-         }                
+/* tamaño del carrusel */
+.carousel-item{
+  height: 90vh;
 }
-@media screen and (max-width: 760px ){
-                     h1{
-                        font-size: 2rem;
-                        text-align: center;
-                     
-                     
-                     }
-                     
-                     
-                     h2{
-                        font-size: 0.5rem;
-                        text-align: center;
-                        margin-bottom: 30px;
-                     }
-                           h4,h5,h6{
-                              font-size: 0.75rem;
-                              text-align: center;
-                              margin-bottom: 10px;
-                                    }
-                                    p{
-                                       font-size: 0.75rem;
-                                       text-align: center;
-                                       margin-bottom: 30px;
-                                    }
-                                    a{
-                                       text-decoration: none;
-                                             }
-                           .titulo{
-                              text-align: center;
-                              padding: 50px;
-                              
-                              
-
-                           }                
+.carousel-item img{
+  height: 100%;
+  object-fit: cover;
 }
-
-
-/* index */
-
-.sectionindexprincipal{
-            
-            .imagenPrincipal{
-               display: flex;
-             
-               background-size: cover;
-               background-repeat: no-repeat;
-               background-position: center center;
-               width: 100%;
-               height: 560px;
-               .parrafoImagenPri{
-                  display: flex;
-                  font-size: 3rem;
-                  justify-content: center;
-                  align-items: center;
-              }
-            }
-           
-            
-                     .nuestrosproductos{
-                        display: flex;
-                        flex-direction: row;
-                        padding: 20px;
-                        margin: 0 auto;
-                        justify-content: space-between;
-                        flex-wrap: wrap;
-                        
-                        
-                        .flex-item{
-
-                           text-align: center;
-                           width: 300px;
-                           padding: 20px;
-                           margin: 10px;
-                           box-shadow: 1px 2px 36px 18px rgba(0, 0, 0, 0.43);
-                            border-radius: 5px;    
-                            .botoncarrito {
-                              background-color: #4d9189; /* Color de fondo */
-                              color: white; /* Color del texto */
-                              padding: 10px 15px; /* Espaciado interno */
-                              border: none; /* Sin borde */
-                              border-radius: 5px; /* Bordes redondeados */
-                              cursor: pointer; /* Cambia el cursor al pasar por encima */
-                              font-size: 16px; /* Tamaño de la fuente */
-                              transition: background-color 0.3s ease; /* Efecto de transición */
-                          }
-                          
-                          .botoncarrito:hover {
-                              background-color: #5ee828; /* Color de fondo al pasar el cursor */
-                          }
-                          
-                        img{
-                              
-                              width: 100%;
-                              height: 250px;
-                                 }
-                        }
-                     }
-                    
-                     
-               }
-@media screen and (max-width: 760px )   
-            {
-                .sectionindexprincipal{
-                  .imagenPrincipal{
-                     display: flex;
-                     flex-direction: column;
-                   
-                     background-size: cover;
-                     background-repeat: no-repeat;
-                     background-position: center center;
-                     width: 100%;
-                     height: 560px;
-                     .parrafoImagenPri{
-                        display: flex;
-                        flex-direction: column;
-                        font-size: 3rem;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                  }
-
-                     .nuestrosproductos{
-                        
-                        justify-content: center;
-                     
-                        
-                        
-                  }         
-                  .flex-item{
-
-                     text-align: center;
-                     width: 300px;
-                     padding: 20px;
-                     margin: 10px;
-                     box-shadow: 1px 2px 36px 18px rgba(0, 0, 0, 0.43);
-                     border-radius: 5px;    
-                     .botoncarrito {
-                        background-color: #4d9189; /* Color de fondo */
-                        color: white; /* Color del texto */
-                        padding: 10px 15px; /* Espaciado interno */
-                        border: none; /* Sin borde */
-                        border-radius: 5px; /* Bordes redondeados */
-                        cursor: pointer; /* Cambia el cursor al pasar por encima */
-                        font-size: 16px; /* Tamaño de la fuente */
-                        transition: background-color 0.3s ease; /* Efecto de transición */
-                  }
-                  }
-               }                       
-            } 
-                  /* footer */
- .altofooter
-                  {
-                     
-                     width: 100%;
-                     height:  10vh;
-                           .logo{
-                                 width: 80px;
-                                 }
-                                    ul{
-                                       display: flex;
-                                       list-style: none;
-                                       a{
-                                          margin-right: 15px;
-                                          text-decoration: none;
-                                          color: #0032bb;
-                                          font-size: 1.5em;
-                                       }
-                                    }
-                                    }
-@media screen and (max-width: 760px ){
-   .altofooter
-   {
-      
-      width: 100%;
-      height:  10vh;
-            .logo{
-                  width: 80px;
-                  }
-                     ul{
-                        display: flex;
-                        flex-direction: column;
-                        list-style: none;
-                        a{
-                           margin-right: 15px;
-                           text-decoration: none;
-                           color: #0032bb;
-                           font-size: 1.5em;
-                        }
-                     }
-                     }
-
-
-
-}             
-
 .fa-square-whatsapp{
-                  color: #00bb2d;
-                  font-size: 5em;
-                  position: fixed;
-                  bottom: 20px;
-                  right: 20px;
-               }
+  color: #00bb2d;
+  font-size: 5em;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
 .fa-square-instagram{
-                  color: rgb(230, 79, 204);
-                  font-size: 5em;
-               }
+  color: rgb(230, 79, 204);
+  font-size: 5em;
+}
 .fa-facebook{
-                  color:#3b5998 ;
-                  font-size: 5em;
-               }
-               
-               
-               /*seccion galeria*/
-.secciongaleriaGrid{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr 0,5fr 1fr;
-   grid-template-areas: "barby intensamente"
-                        "frozen intensamente"
-                        " pliplin intensamente"
-                         " plinplin unicornio"    ;  
-   gap: 25px;
-    .intensamente{
-      grid-area:intensamente;
-      
-    }
-    .barby{
-      grid-area: barby;
-    
-    }
-    .frozen{
-      grid-area: frozen;
-      
-    }
-    .plinplin{
-      grid-area: plinplin;
-      
-    }
-    .unicornio{
-      grid-area: unicornio;
-      
-    }
-    .hijo{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-     
-    }
+  color:#3b5998 ;
+  font-size: 5em;
+}
+.secciongaleriaGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: 
+      "barby intensamente"
+      "frozen intensamente"
+      "plinplin intensamente"
+      "plinplin unicornio";
+  gap: 25px;
 }
 
-/*seccion productos*/
-.videoproducto{
-   display: flex;
-   justify-content: center; /* Centrar horizontalmente */
-   align-items: center; /* Centrar verticalmente */
-   width: 60%;
-  
-   flex-wrap: wrap;
-   
-   margin: 0 auto;
-                  }
-                  /*sección contacto*/
+.intensamente {
+  grid-area: intensamente;
+}
 
-.formulario {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center; 
-   width: 100%;
-   height: 70vh;
-   margin: 0 auto;
-   padding: 20px;
-   border: 1px solid #ccc;
-   border-radius: 5px;
-   box-shadow: 1px 2px 36px 18px rgba(0, 0, 0, 0.1);
-   background-color: #f9f9f9;
+.barby {
+  grid-area: barby;
+}
+
+.frozen {
+  grid-area: frozen;
+}
+
+.plinplin {
+  grid-area: plinplin;
+}
+
+.unicornio {
+  grid-area: unicornio;
+}
+
+.hijo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Para el efecto hover */
+}
+
+.hijo:hover {
+  transform: scale(1.1); /* Agrandar la imagen */
+}
+
+/* Media Query para hacer el grid responsivo */
+@media (max-width: 768px) {
+  .secciongaleriaGrid {
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+          "barby"
+          "intensamente"
+          "frozen"
+          "plinplin"
+          "unicornio";
+  }
+}
+.card-title{
+  text-align: center;
+  color: #ca46e2;
+  font-size: 2rem
+
   
 }
-.mapa{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   font-size: 25px;
+.titnuetrosproductos{
+  text-align: center;
+  
+}
+.h3deladivicion{
+  text-align: center;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
-@media screen and (max-width: 760px )
-{  .altofooter{
-   flex-direction: column;
-   height: initial;
-}
-   .altoheader{
-    
-   flex-direction: column;
-   height: initial;
+.footer{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+  padding:20px;
+
+  background-image: radial-gradient(circle, #a1e592, #9ce5b9, #a7e5a6, #afe5b9, #b9e5c5, #c7e5b9, #b9e5cf, #b9e5c6, #b5e5af, #a6e5b7, #a2e59c, #92e5b0);
+  font-size: 10px;
+  .logo{
+      width: 100px;
+  }
+  ul{
+      list-style: none;
+  }
+      a{
+          text-decoration: none;
+          
+          font-size: 1.5em;
+      }
+  .fa-instagram{
+          font-size: 3em;
+          color: #ca46e2;
+        }
+   .fa-facebook{
+    font-size: 3em;
+    color: #6046e2;
    }
+
+  .fa-whatsapp{
+      font-size: 100px;
+      color:rgb(44, 181, 44);
+      position:fixed;
+      bottom: 50px;
+      right: 50px;
+     
+  }
+  p{
+      font-size: 1.5em;
+    
+  }
+
+}
+@media screen and (max-width:768px){
+  
+ .footer{
+   flex-direction: column;
+   height: initial;
+   align-items: start;
+   row-gap:20px;
+ }
+
 }
