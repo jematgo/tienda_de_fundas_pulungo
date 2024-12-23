@@ -159,3 +159,42 @@
  }
 
 }
+
+#miFormulario {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+#miFormulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fa8562; /* Combina con el esquema de colores */
+}
+
+#miFormulario input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#miFormulario button {
+    background-color: #fa8562;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#miFormulario button:hover {
+    background-color: #f87754;
+}
