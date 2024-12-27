@@ -160,41 +160,49 @@
 
 }
 
+
 #miFormulario {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-    text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
 }
 
-#miFormulario label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #fa8562; /* Combina con el esquema de colores */
+#miFormulario .form-label {
+  color: #fa8562;
+  font-weight: bold;
 }
 
-#miFormulario input {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+#miFormulario .form-control {
+  margin-bottom: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
 }
 
-#miFormulario button {
-    background-color: #fa8562;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+#miFormulario .btn-primary {
+  background-color: #fa8562;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-#miFormulario button:hover {
-    background-color: #f87754;
+#miFormulario .btn-primary:hover {
+  background-color: #f87754;
+}
+
+#miFormulario .invalid-tooltip {
+  font-size: 0.85em;
+  color: #fff;
+  background-color: #dc3545;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(-50%);
 }
