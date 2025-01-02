@@ -206,3 +206,12 @@
   left: 0;
   transform: translateY(-50%);
 }
+.is-invalid {
+  border-color: #dc3545; /* Bordes rojos para campos inválidos */
+}
+
+.invalid-feedback {
+  display: block;
+  color: #dc3545; /* Color rojo para los mensajes de error */
+}
+
